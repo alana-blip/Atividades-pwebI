@@ -6,7 +6,10 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:userid', (req, res) => {
-    res.router('users')
+    res.render('profile', {
+        title: 'Perfil do Usuário',
+        userid: req.params.userid
+    })
 })
 
 module.exports = router
