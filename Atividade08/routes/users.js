@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:userid', (req, res) => {
-    res.send(`Bem-Vindo! Seu ID é ${req.params.userid}`)
+    res.router('users')
 })
 
 module.exports = router

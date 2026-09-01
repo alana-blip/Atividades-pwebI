@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/', (req, res) => res.send('Página: Data'))
+router.post('/', (req, res) => res.render('data'))
 
 module.exports = router
